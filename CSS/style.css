@@ -19,6 +19,13 @@ footer{
   padding-top: 2%;
 }
 
+#NewTask{
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  display: none;
+}
+
 #container{
   display: flex;
   justify-content: space-between;
