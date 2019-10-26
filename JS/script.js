@@ -11,8 +11,10 @@ $(document).ready(function(){
   });
 
   //This create button will add a div to first article when pressed and hide NewTask div
-  $()"#ok").click(function(){
-    
+  $("#ok").click(function(){
+    var str = $("input").val();
+    alert("this is txt: "+str);
+    $("#NewTask").hide();
   });
 
 
