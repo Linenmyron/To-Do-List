@@ -11,11 +11,13 @@
   </head>
   <body>
     <header>To-Do List Management</header>
-    <button>New Task</button>
+    <button id="CreateTask">New Task</button>
     <!--This is a new task that user will create after pressed "new task" button-->
     <div id="NewTask">
-      <h1>New Task</h1>
-      <input type="text" placeholder="What to do?">
+      <h2>New Task</h2>
+      <input type="text" placeholder="Task title?">
+      <button id="ok">Create</button>
+      <button id="cancel">Cancel</button>
     </div>
     <main id="container">
       <!--Article will hold to div:s that are created for new tasks -->
