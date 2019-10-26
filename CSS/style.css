@@ -1,0 +1,13 @@
+*{
+  font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(lightgreen,darkgreen);
+    background-repeat: no-repeat;
+}
+
+header,footer{
+    font-size: 2.5em;
+    text-align: center;
+}
