@@ -3,7 +3,8 @@
 }
 
 body{
-    background-image: linear-gradient(lightgreen,darkgreen);
+    height: 100vh;
+    background-image: linear-gradient(#06beb6,#48b1bf);
     background-repeat: no-repeat;
 }
 
@@ -16,14 +17,29 @@ header{
   padding-bottom: 2%;
 }
 footer{
-  padding-top: 2%;
+  position: absolute;
+  bottom: 0%;
+  display: block;
+}
+
+article{
+  margin-top: 3%;
+  height: auto;
+  width: auto;
+  border: 1px solid blue;
 }
 
 #NewTask{
+  position: fixed;
   height: auto;
-  width: auto;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  max-width: auto;
   border: 2px solid black;
   display: none;
+  transform: translate(-50%,-50%);
 }
 
 #container{
