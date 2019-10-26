@@ -1,3 +1,4 @@
+/*Main design for the page*/
 *{
   font-family: sans-serif;
 }
@@ -28,7 +29,8 @@ article{
   width: auto;
   border: 1px solid blue;
 }
-
+/*--------------------------------------------------*/
+/* Design specifict html elements*/
 #NewTask{
   position: fixed;
   height: auto;
@@ -46,3 +48,5 @@ article{
   display: flex;
   justify-content: space-between;
 }
+
+/*--------------------------------------------------*/
