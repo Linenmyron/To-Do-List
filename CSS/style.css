@@ -56,4 +56,14 @@ article{
   justify-content: space-between;
 }
 
+#NewTask{
+  background-color: #F09C23;
+}
+
+.task{
+  height: auto;
+  width: auto;
+  background-color: #ED4337;
+}
+
 /*--------------------------------------------------*/

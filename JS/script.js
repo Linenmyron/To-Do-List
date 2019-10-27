@@ -14,10 +14,9 @@ $(document).ready(function(){
   $("#ok").click(function(){
     var idNr = 1;
     var str = $("input").val();
-    $('#start').append('<div>'+str+'</div>');
+    $('#start').append('<div id='+idNr+' class='+'task'+'>'+str+'</div>');
     $("input").val("");
     idNr = idNr+1;
-    console.log(idNr);
     $("#NewTask").hide();
   });
 
