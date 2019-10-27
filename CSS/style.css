@@ -32,15 +32,25 @@ article{
   border: 1px solid blue;
 }
 
+
 ::placeholder{
-  color: black;
+  font-size: 1.1em;
 }
 /*--------------------------------------------------*/
 /* Design specifict html elements*/
 
+#addTask{
+  display: flex;
+}
+
+.circle{
+  height: auto;
+  width: 10%;
+  border-radius: 50%;
+}
+
 #container{
   position: fixed;
-  display: flex;
   width: 50%;
   left: 50%;
   justify-content: center;
@@ -50,8 +60,20 @@ article{
   transform: translate(-50%);
 }
 
+img{
+  height: auto;
+  width: 10%;
+}
+
 input{
-  size: 25px;
+  back:grey;
+  font-size: 1.2em;
+}
+
+.ToDo{
+  background-color: yellow;
+  display: flex;
+  font-size: 1.5em;
 }
 
 /*--------------------------------------------------*/

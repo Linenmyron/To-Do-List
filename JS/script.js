@@ -5,19 +5,20 @@ $(document).ready(function(){
     $("#NewTask").show();
   });
 
-  //This Cancel button function will cancel and hide the NewTask div
-  $("#cancel").click(function(){
-    $("#NewTask").hide();
-  });
-
-  //This create button will add a div to first article when pressed and hide NewTask div
-  $("#ok").click(function(){
-    var idNr = 1;
-    var str = $("input").val();
-    $('#start').append('<div id='+idNr+' class='+'task'+'>'+str+'</div>');
-    $("input").val("");
-    idNr = idNr+1;
-    $("#NewTask").hide();
+  $("#add").click(function(event){
+    event.preventDefault();
+    var task = $("#task");
+    var taskID = 1;
+    var circleDone ="<div id='done' class='circle'></div>"
+    var circleDelete = "<div id='delete' class='circle'></div>"
+    var bgnArticle = "<article id="+taskID+" class='ToDo'>"
+    var endArticle = "</article>"
+    if(task.val().length > 0){
+      $("#addTask").before(bgnArticle+circleDone+task.val()+circleDelete+endArticle);
+      taskID++;
+    }else{
+      alert("Can't create an empty task");
+    }
   });
 
 
