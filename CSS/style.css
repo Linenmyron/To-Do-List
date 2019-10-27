@@ -38,19 +38,6 @@ article{
 /*--------------------------------------------------*/
 /* Design specifict html elements*/
 
-#NewTask{
-  position: fixed;
-  height: auto;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  max-width: auto;
-  border: 2px solid black;
-  display: none;
-  transform: translate(-50%,-50%);
-}
-
 #container{
   position: fixed;
   display: flex;
@@ -63,14 +50,8 @@ article{
   transform: translate(-50%);
 }
 
-#NewTask{
-  background-color: #F09C23;
-}
-
-.task{
-  height: auto;
-  width: auto;
-  background-color: #ED4337;
+input{
+  size: 25px;
 }
 
 /*--------------------------------------------------*/
