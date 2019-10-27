@@ -43,20 +43,18 @@ article{
   display: flex;
 }
 
-.circle{
+#delete, #done{
   height: auto;
-  width: 10%;
-  border-radius: 50%;
+  width: 5%;
 }
 
 #container{
   position: fixed;
-  width: 50%;
   left: 50%;
   justify-content: center;
   border:1px solid black;
   height: auto;
-  max-width: auto;
+  width: auto;
   transform: translate(-50%);
 }
 
@@ -72,7 +70,10 @@ input{
 
 .ToDo{
   background-color: yellow;
+  padding: 1% 1% 1% 1%;
   display: flex;
+  justify-content: space-between;
+  height: auto;
   font-size: 1.5em;
 }
 

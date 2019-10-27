@@ -9,8 +9,8 @@ $(document).ready(function(){
     event.preventDefault();
     var task = $("#task");
     var taskID = 1;
-    var circleDone ="<div id='done' class='circle'></div>"
-    var circleDelete = "<div id='delete' class='circle'></div>"
+    var circleDone ="<img id='done' src='img/done_symbol.png'></img>"
+    var circleDelete = "<img id='delete'src='img/close.png'></img>"
     var bgnArticle = "<article id="+taskID+" class='ToDo'>"
     var endArticle = "</article>"
     if(task.val().length > 0){
