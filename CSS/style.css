@@ -52,8 +52,15 @@ article{
 }
 
 #container{
+  position: fixed;
   display: flex;
-  justify-content: space-between;
+  width: 50%;
+  left: 50%;
+  justify-content: center;
+  border:1px solid black;
+  height: auto;
+  max-width: auto;
+  transform: translate(-50%);
 }
 
 #NewTask{
