@@ -12,9 +12,12 @@ $(document).ready(function(){
 
   //This create button will add a div to first article when pressed and hide NewTask div
   $("#ok").click(function(){
+    var idNr = 1;
     var str = $("input").val();
-    
-    alert("this is txt: "+str);
+    $('#start').append('<div>'+str+'</div>');
+    $("input").val("");
+    idNr = idNr+1;
+    console.log(idNr);
     $("#NewTask").hide();
   });
 
