@@ -32,6 +32,13 @@ article{
   border: 1px solid blue;
 }
 
+ul li:nth-child(even){
+  background-color: lightgreen;
+}
+
+ul li{
+  background-color: lightblue;
+}
 
 ::placeholder{
   font-size: 1.1em;
@@ -46,9 +53,10 @@ article{
 #sortable {
   list-style-type: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   width: 60%;
  }
+
 #sortable li {
   margin: 0 5px 5px 5px;
   padding: 5px;
@@ -59,7 +67,6 @@ article{
 #container{
   position: fixed;
   left: 50%;
-  justify-content: center;
   border:1px solid black;
   height: auto;
   width: auto;
