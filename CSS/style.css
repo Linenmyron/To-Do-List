@@ -43,10 +43,18 @@ article{
   display: flex;
 }
 
-#delete, #done{
-  height: auto;
-  width: 5%;
-}
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  width: 60%;
+ }
+#sortable li {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  height: 1.5em; }
+
 
 #container{
   position: fixed;
@@ -67,14 +75,4 @@ input{
   back:grey;
   font-size: 1.2em;
 }
-
-.ToDo{
-  background-color: yellow;
-  padding: 1% 1% 1% 1%;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  font-size: 1.5em;
-}
-
 /*--------------------------------------------------*/
