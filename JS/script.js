@@ -16,11 +16,19 @@ $(document).ready(function(){
     }
   });
 
-$(function(){
-  $("#sortable").sortable({
-    placeholder:"ui-state-highlight"
+  //this code is from https://jqueryui.com/sortable/
+  $(function(){
+    $("#sortable").sortable({
+      placeholder:"ui-state-highlight"
+    });
   });
-});
+
+  $(document).on('dblclick','li', function(){
+    $(this).toggleClass('remove').fadeOut('slow', function(){
+      $(this).remove();
+    });
+  });
+
 
 
 //End of the document ready function
